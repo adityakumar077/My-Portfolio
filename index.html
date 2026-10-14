@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya Kumar — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <h1>ADI<span style="color: #d8ff36">.</span></h1>
+    </div>
+
+    <nav>
+      <a href="#home" class="logo">ADI<span>DEV.</span></a>
+      <button
+        class="menu-button"
+        id="menuButton"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        MENU
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">HOME</a><a href="#about">ABOUT</a
+        ><a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a
+        ><a href="#contact">CONTACT</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+        <div class="eyebrow">✳ Portfolio / 2026</div>
+        <h1>CODE IS<br /><span class="outline">MY OWN</span><br />CANVAS.</h1>
+        <p class="hero-description">
+          Hi, I'm <b>Aditya Kumar</b>. I’m passionate about technology, programming,
+          Artificial Intelligence, and problem-solving. I’m currently
+          strengthening my skills in web development, Data Structures &
+          Algorithms, and AI . I enjoy building projects, learning new
+          technologies, and continuously improving myself as a developer.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">VIEW PROJECTS ↗</a>
+          <a href="#contact" class="btn">CONTACT ME +</a>
+        </div>
+        </div>
+        <!-- Circular PFP: Image wrapped cleanly inside glowing neon circle -->
+        <div class="hero-pfp" data-tilt>
+          <div class="pfp-circle-glow" aria-hidden="true"></div>
+          <figure class="pfp" id="pfp">
+            <img
+              src="ChatGPT Image Oct 14, 2026, 09_18_53 PM.png"
+              alt="Portrait of Aditya Kumar"
+              id="pfpImg"
+            />
+            <div class="pfp-empty">
+              <strong>AK</strong>
+            </div>
+          </figure>
+        </div>
+        <div class="scroll-note">SCROLL TO EXPLORE ↓</div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-content">
+          <div class="eyebrow">About me</div>
+          <h2>Hello, I'm Aditya.</h2>
+          <p>
+            I am a B.Tech Computer Science and Engineering student with a solid
+            foundation from my prior diploma in the same field, passionate about
+            building AI-Driven solutions and sharpening my skills through Data
+            Structure and Algorithms.
+          </p>
+          <div class="facts">
+            <div><span>Name</span><b>Aditya Kumar (Aii)</b></div>
+            <div><span>Studying</span><b>BTech CSE, UCET Hazaribagh</b></div>
+            <div>
+              <span>Interests</span><b>Web dev, Gen AI, Data Structures</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual" data-tilt>
+          <div class="about-card-glow" aria-hidden="true"></div>
+          <div class="about-card">
+            <div class="card-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="card-title">neural_matrix.algo</div>
+              <div class="card-badge">LIVE</div>
+            </div>
+
+            <div class="canvas-wrap">
+              <canvas id="aboutCanvas"></canvas>
+
+              <!-- Floating interactive tags -->
+              <div class="float-tag tag-ai">
+                <span class="tag-pulse"></span>
+                <span>Neural Net &amp; AI</span>
+              </div>
+              <div class="float-tag tag-algo">
+                <span>Graphs &amp; DSA</span>
+              </div>
+              <div class="float-tag tag-code">
+                <span>&lt;FullStack /&gt;</span>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <span class="prompt-icon">&gt;</span>
+              <span class="typing-text" id="aboutTyping">Optimizing algorithms &amp; exploring AI models</span>
+              <span class="blinking-cursor">_</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="skills">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">What I use</div>
+            <h2>The Toolkit.</h2>
+          </div>
+          <p>
+            The languages and ideas I work with most, from web pages to data
+            plots.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill">
+            <h3>Web</h3>
+            <ul>
+              <li>HTML &amp; CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Progressive web apps</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>C</li>
+              <li>Matplotlib data plots</li>
+              <li>Chatbots &amp; scripting</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Learning now</h3>
+            <ul>
+              <li>Data structures &amp; algorithms</li>
+              <li>Generative AI</li>
+              <li>Mern Stack</li>
+              <li>Soft Skills</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="work" id="projects">
+        <div class="section-header">
+          <div>
+            <div class="eyebrow">Selected works</div>
+            <h2>The Work.</h2>
+          </div>
+          <p>Four things I've built. Tilt the cards with your cursor.</p>
+        </div>
+        <div class="art-grid">
+          <article class="art-card" tabindex="0" data-tilt>
+            <div class="artwork art-one"><div class="shape"></div></div>
+            <div class="art-info">
+              <div>
+                <h3>N/A</h3>
+                <p>
+                  This is a placeholder for future projects, as I continue to build and showcase my work.
+                </p>
+              </div>
+              <span class="art-number">01 ↗</span>
+            </div>
+          </article>
+          <article class="art-card" tabindex="0" data-tilt>
+            <div class="artwork art-two"><div class="shape"></div></div>
+            <div class="art-info">
+              <div>
+                <h3>N/A</h3>
+                <p>
+                   This is a placeholder for future projects, as I continue to build and showcase my work.
+                </p>
+              </div>
+              <span class="art-number">02 ↗</span>
+            </div>
+          </article>
+          <article class="art-card" tabindex="0" data-tilt>
+            <div class="artwork art-three"><div class="shape"></div></div>
+            <div class="art-info">
+              <div>
+                <h3>N/A</h3>
+                <p>
+                  This is a placeholder for future projects, as I continue to build and showcase my work.
+                </p>
+              </div>
+              <span class="art-number">03 ↗</span>
+            </div>
+          </article>
+          <article class="art-card" tabindex="0" data-tilt>
+            <div class="artwork art-four"><div class="shape"></div></div>
+            <div class="art-info">
+              <div>
+                <h3>N/A</h3>
+                <p>
+                  This is a placeholder for future projects, as I continue to build and showcase my work.
+                </p>
+              </div>
+              <span class="art-number">04 ↗</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="eyebrow">Get in touch</div>
+        <h2>LET'S BUILD<br /><span>SOMETHING.</span></h2>
+        <p>Got an idea, a project or just want to say hi? My inbox is open.</p>
+        <a class="cta" href="mailto:thedevs050@gmail.com">EMAIL ME ↗</a>
+        <a class="mail" href="mailto:thedevs050@gmail.com"
+          >thedevs050@gmail.com</a
+        >
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div>© 2026 Aditya Kumar. All rights reserved.</div>
+      <div>
+        Designed &amp; Developed with creativity <strong>by Aditya</strong>.
+      </div>
+    </footer>
+
+    <script>
+      window.addEventListener("load", () =>
+        setTimeout(
+          () => document.getElementById("loader").classList.add("hidden"),
+          700,
+        ),
+      );
+
+      const menuButton = document.getElementById("menuButton"),
+        navLinks = document.getElementById("navLinks");
+      function setMenu(open) {
+        navLinks.classList.toggle("open", open);
+        menuButton.setAttribute("aria-expanded", open);
+        menuButton.textContent = open ? "CLOSE" : "MENU";
+      }
+      menuButton.addEventListener("click", () =>
+        setMenu(!navLinks.classList.contains("open")),
+      );
+      navLinks
+        .querySelectorAll("a")
+        .forEach((a) => a.addEventListener("click", () => setMenu(false)));
+
+      // Profile picture: fallback if image fails to load.
+      const pfp = document.getElementById("pfp"),
+        pfpImg = document.getElementById("pfpImg");
+      function checkPfp() {
+        if (pfpImg.complete && pfpImg.naturalWidth === 0)
+          pfp.classList.add("empty");
+      }
+      pfpImg.addEventListener("load", () => pfp.classList.remove("empty"));
+      pfpImg.addEventListener("error", () => pfp.classList.add("empty"));
+      checkPfp();
+
+      // Art shapes pop on click/Enter, same as the gallery.
+      document.querySelectorAll(".art-card").forEach((card) => {
+        const pop = () => {
+          const s = card.querySelector(".shape");
+          if (s)
+            s.animate(
+              [
+                { transform: "scale(1) rotate(0deg)" },
+                { transform: "scale(1.15) rotate(15deg)" },
+                { transform: "scale(1) rotate(0deg)" },
+              ],
+              { duration: 600, easing: "ease-in-out" },
+            );
+        };
+        card.addEventListener("click", pop);
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            pop();
+          }
+        });
+      });
+
+      // 3D tilt on the photo and project cards (skipped on touch screens).
+      if (window.matchMedia("(hover:hover)").matches) {
+        document.querySelectorAll("[data-tilt]").forEach((el) => {
+          el.addEventListener("mousemove", (e) => {
+            const r = el.getBoundingClientRect(),
+              x = (e.clientX - r.left) / r.width - 0.5,
+              y = (e.clientY - r.top) / r.height - 0.5;
+            el.style.transform = `perspective(900px) rotateY(${x * 12}deg) rotateX(${-y * 12}deg)`;
+          });
+          el.addEventListener("mouseleave", () => {
+            el.style.transform = "";
+          });
+        });
+      }
+
+      // Cursor glow: neon glow follows the mouse (skipped on touch screens).
+      if (window.matchMedia("(hover:hover)").matches) {
+        const glow = document.createElement("div");
+        glow.className = "cursor-glow";
+        glow.setAttribute("aria-hidden", "true");
+        document.body.appendChild(glow);
+        const calm = window.matchMedia("(prefers-reduced-motion:reduce)").matches;
+        let tx = 0, ty = 0, x = 0, y = 0, seen = false;
+        document.addEventListener("mousemove", (e) => {
+          tx = e.clientX;
+          ty = e.clientY;
+          if (!seen) { x = tx; y = ty; seen = true; }
+          glow.classList.add("on");
+        });
+        document.documentElement.addEventListener("mouseleave", () =>
+          glow.classList.remove("on"),
+        );
+        (function follow() {
+          x += (tx - x) * (calm ? 1 : 0.15);
+          y += (ty - y) * (calm ? 1 : 0.15);
+          glow.style.transform = `translate(${x}px, ${y}px)`;
+          requestAnimationFrame(follow);
+        })();
+      }
+
+      // About Me Section - Algorithmic & Neural Canvas Animation
+      (function initAboutCanvas() {
+        const canvas = document.getElementById("aboutCanvas");
+        if (!canvas) return;
+        const ctx = canvas.getContext("2d");
+        const container = canvas.parentElement;
+        let w = (canvas.width = container.clientWidth || 400);
+        let h = (canvas.height = container.clientHeight || 290);
+
+        const resize = () => {
+          if (!container) return;
+          w = canvas.width = container.clientWidth;
+          h = canvas.height = container.clientHeight;
+        };
+        window.addEventListener("resize", resize);
+
+        const nodeCount = 20;
+        const maxDist = 95;
+        const nodes = [];
+        for (let i = 0; i < nodeCount; i++) {
+          nodes.push({
+            x: Math.random() * w,
+            y: Math.random() * h,
+            vx: (Math.random() - 0.5) * 0.6,
+            vy: (Math.random() - 0.5) * 0.6,
+            r: Math.random() * 2 + 1.8,
+            pulse: Math.random() * Math.PI * 2,
+          });
+        }
+
+        const packets = [];
+        function createPacket(from, to) {
+          packets.push({ from, to, progress: 0, speed: 0.016 + Math.random() * 0.014 });
+        }
+
+        let mouse = { x: -1000, y: -1000, active: false };
+        const card = canvas.closest(".about-card");
+        if (card) {
+          card.addEventListener("mousemove", (e) => {
+            const rect = canvas.getBoundingClientRect();
+            mouse.x = e.clientX - rect.left;
+            mouse.y = e.clientY - rect.top;
+            mouse.active = true;
+          });
+          card.addEventListener("mouseleave", () => {
+            mouse.active = false;
+          });
+        }
+
+        let isVisible = true;
+        if ("IntersectionObserver" in window) {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              isVisible = entries[0].isIntersecting;
+            },
+            { threshold: 0.1 }
+          );
+          observer.observe(canvas);
+        }
+
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        function animate() {
+          if (!isVisible) {
+            requestAnimationFrame(animate);
+            return;
+          }
+
+          ctx.clearRect(0, 0, w, h);
+
+          for (let i = 0; i < nodes.length; i++) {
+            const n = nodes[i];
+            if (!reducedMotion) {
+              n.x += n.vx;
+              n.y += n.vy;
+              if (n.x < 0 || n.x > w) n.vx *= -1;
+              if (n.y < 0 || n.y > h) n.vy *= -1;
+              n.pulse += 0.04;
+
+              if (mouse.active) {
+                const dx = mouse.x - n.x;
+                const dy = mouse.y - n.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < 110 && dist > 1) {
+                  n.x += (dx / dist) * 0.7;
+                  n.y += (dy / dist) * 0.7;
+                }
+              }
+            }
+
+            const glowSize = n.r * (2 + Math.sin(n.pulse) * 0.5);
+            ctx.beginPath();
+            ctx.arc(n.x, n.y, glowSize, 0, Math.PI * 2);
+            ctx.fillStyle = "rgba(216, 255, 54, 0.15)";
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+            ctx.fillStyle = "#d8ff36";
+            ctx.fill();
+          }
+
+          for (let i = 0; i < nodes.length; i++) {
+            for (let j = i + 1; j < nodes.length; j++) {
+              const a = nodes[i], b = nodes[j];
+              const dx = a.x - b.x, dy = a.y - b.y;
+              const dist = Math.sqrt(dx * dx + dy * dy);
+              if (dist < maxDist) {
+                const alpha = (1 - dist / maxDist) * 0.4;
+                ctx.beginPath();
+                ctx.moveTo(a.x, a.y);
+                ctx.lineTo(b.x, b.y);
+                ctx.strokeStyle = `rgba(216, 255, 54, ${alpha})`;
+                ctx.lineWidth = 1;
+                ctx.stroke();
+
+                if (!reducedMotion && Math.random() < 0.003 && packets.length < 6) {
+                  createPacket(a, b);
+                }
+              }
+            }
+          }
+
+          for (let i = packets.length - 1; i >= 0; i--) {
+            const p = packets[i];
+            p.progress += p.speed;
+            if (p.progress >= 1) {
+              packets.splice(i, 1);
+              continue;
+            }
+            const px = p.from.x + (p.to.x - p.from.x) * p.progress;
+            const py = p.from.y + (p.to.y - p.from.y) * p.progress;
+
+            ctx.beginPath();
+            ctx.arc(px, py, 2.5, 0, Math.PI * 2);
+            ctx.fillStyle = "#ffffff";
+            ctx.shadowColor = "#d8ff36";
+            ctx.shadowBlur = 8;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+          }
+
+          requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        const typingEl = document.getElementById("aboutTyping");
+        if (typingEl && !reducedMotion) {
+          const phrases = [
+            "Optimizing algorithms & exploring AI models",
+            "Solving DSA problems with clean logic",
+            "Designing modern full-stack web architectures",
+            "Exploring neural networks & LLM intelligence"
+          ];
+          let phraseIdx = 0;
+          let charIdx = phrases[0].length;
+          let isDeleting = true;
+          const pauseTime = 2600;
+
+          function tick() {
+            const current = phrases[phraseIdx];
+            if (isDeleting) {
+              charIdx--;
+              typingEl.textContent = current.substring(0, charIdx);
+              if (charIdx <= 0) {
+                isDeleting = false;
+                phraseIdx = (phraseIdx + 1) % phrases.length;
+                setTimeout(tick, 350);
+                return;
+              }
+              setTimeout(tick, 25);
+            } else {
+              charIdx++;
+              typingEl.textContent = current.substring(0, charIdx);
+              if (charIdx >= current.length) {
+                isDeleting = true;
+                setTimeout(tick, pauseTime);
+                return;
+              }
+              setTimeout(tick, 45);
+            }
+          }
+          setTimeout(tick, pauseTime);
+        }
+      })();
+    </script>
+  </body>
+</html>
